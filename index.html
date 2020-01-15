@@ -963,7 +963,30 @@ if(InputText.match("こんにち")){
 		//回答の出力
 	　var Question = new CommentCls(1,"何か書いたら？");
 	　},800);
- }else{
+
+ }else　if(InputText.match("誕生日は.*[?|？]")){
+
+ setTimeout(function(){
+		//回答の出力
+	　var Question = new CommentCls(1,"1月31日よ");
+	　},800);
+
+}else　if(InputText.match("おやすみ")){
+
+ setTimeout(function(){
+		//回答の出力
+	　var Question = new CommentCls(1,"おやすみなさい");
+	　},800);
+
+}else　if(InputText.match("肉は.*好.*[?|？]")){
+
+ setTimeout(function(){
+		//回答の出力
+	　var Question = new CommentCls(1,"ええ、好きよ");
+	　},800);
+
+
+}else{
 
 
 
