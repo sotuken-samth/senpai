@@ -337,6 +337,29 @@ if(InputText.match("こんにち")){
 	　},800);
 
 
+}else　if(InputText.match("今日の天気.*[?|？]")){
+
+ setTimeout(function(){
+		//回答の出力
+		day = 0;
+		var Question = new CommentCls(1,"今日は" + showWeather(data,day) + "ってニュースで言ってたわ");
+	　},800);
+
+}else　if(InputText.match("明日の天気.*[?|？]")){
+ 
+ setTimeout(function(){
+		//回答の出力
+		day = 1;
+		var Question = new CommentCls(1,"明日の大分は" + showWeather(data,day) + "");
+	 },800);
+
+}else　if(InputText.match("明後日の天気.*[?|？]")){
+ 
+ setTimeout(function(){
+		//回答の出力
+		day = 2;
+		var Question = new CommentCls(1,"明後日の大分は" + showWeather(data,day) + "");
+	 },800);
 }else　if(InputText.match("こんばん")){
 
  setTimeout(function(){
@@ -1090,29 +1113,6 @@ if(InputText.match("こんにち")){
 	　var Question = new CommentCls(1,"明日が来なければいいのに");
 	　},800);
 
-}else　if(InputText.match("今日の天気.*[?|？]")){
-
- setTimeout(function(){
-		//回答の出力
-		day = 0;
-		var Question = new CommentCls(1,"今日は" + showWeather(data,day) + "ってニュースで言ってたわ");
-	　},800);
-
-}else　if(InputText.match("明日の天気.*[?|？]")){
- 
- setTimeout(function(){
-		//回答の出力
-		day = 1;
-		var Question = new CommentCls(1,"明日の大分は" + showWeather(data,day) + "");
-	 },800);
-
-}else　if(InputText.match("明後日の天気.*[?|？]")){
- 
- setTimeout(function(){
-		//回答の出力
-		day = 2;
-		var Question = new CommentCls(1,"明後日の大分は" + showWeather(data,day) + "");
-	 },800);
 
 }else{
 
